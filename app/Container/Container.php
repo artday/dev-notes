@@ -22,7 +22,7 @@ class Container
             static $resolved;
 
             if(!$resolved){
-                $resolved = $callable();
+                $resolved = $callable($this);
             }
 
             return $resolved;
